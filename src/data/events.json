@@ -1,0 +1,330 @@
+[
+  {
+    "id": 1,
+    "title": "Frontend Assignment",
+    "date": "2025-06-24",
+    "time": "10:00",
+    "duration": "30m",
+    "priority": "high"
+  },
+  {
+    "id": 2,
+    "title": "Design Review",
+    "date": "2025-06-26",
+    "time": "14:00",
+    "duration": "1h",
+    "priority": "medium"
+  },
+  {
+    "id": 3,
+    "title": "Team Meeting",
+    "date": "2025-06-26",
+    "time": "10:00",
+    "duration": "1h",
+    "priority": "high"
+  },
+  {
+    "id": 4,
+    "title": "Online Exam",
+    "date": "2025-06-27",
+    "time": "10:30",
+    "duration": "30m",
+    "priority": "high"
+  },
+  {
+    "id": 5,
+    "title": "Code Push Deadline",
+    "date": "2025-06-27",
+    "time": "18:00",
+    "duration": "1h",
+    "priority": "medium"
+  },
+  {
+    "id": 6,
+    "title": "UI Fix Session",
+    "date": "2025-06-27",
+    "time": "11:00",
+    "duration": "40m",
+    "priority": "medium"
+  },
+  {
+    "id": 7,
+    "title": "Doctor Appointment",
+    "date": "2025-06-28",
+    "time": "15:00",
+    "duration": "1h",
+    "priority": "low"
+  },
+  {
+    "id": 8,
+    "title": "Pet Bathing",
+    "date": "2025-06-29",
+    "time": "17:00",
+    "duration": "2h",
+    "priority": "low"
+  },
+  {
+    "id": 9,
+    "title": "Weekly Plan",
+    "date": "2025-06-30",
+    "time": "09:00",
+    "duration": "1h",
+    "priority": "medium"
+  },
+  {
+    "id": 10,
+    "title": "News Reading",
+    "date": "2025-07-01",
+    "time": "09:00",
+    "duration": "2h",
+    "priority": "low"
+  },
+  {
+    "id": 11,
+    "title": "Interview",
+    "date": "2025-07-02",
+    "time": "14:00",
+    "duration": "1h",
+    "priority": "high"
+  },
+  {
+    "id": 12,
+    "title": "Team Sync",
+    "date": "2025-07-03",
+    "time": "11:00",
+    "duration": "1h",
+    "priority": "medium"
+  },
+  {
+    "id": 13,
+    "title": "Code Review",
+    "date": "2025-07-03",
+    "time": "11:30",
+    "duration": "30m",
+    "priority": "medium"
+  },
+  {
+    "id": 14,
+    "title": "Mentor Lunch",
+    "date": "2025-07-04",
+    "time": "13:00",
+    "duration": "1.5h",
+    "priority": "low"
+  },
+  {
+    "id": 15,
+    "title": "Volunteer Event",
+    "date": "2025-07-05",
+    "time": "16:00",
+    "duration": "2h",
+    "priority": "medium"
+  },
+  {
+    "id": 16,
+    "title": "Backup Database",
+    "date": "2025-07-06",
+    "time": "07:00",
+    "duration": "30m",
+    "priority": "low"
+  },
+  {
+    "id": 17,
+    "title": "Sprint Planning",
+    "date": "2025-07-07",
+    "time": "10:00",
+    "duration": "1.5h",
+    "priority": "high"
+  },
+  {
+    "id": 18,
+    "title": "Call with Vendor",
+    "date": "2025-07-08",
+    "time": "15:00",
+    "duration": "1h",
+    "priority": "medium"
+  },
+  {
+    "id": 19,
+    "title": "App Demo",
+    "date": "2025-07-09",
+    "time": "13:00",
+    "duration": "1h",
+    "priority": "medium"
+  },
+  {
+    "id": 20,
+    "title": "Marketing Review",
+    "date": "2025-07-10",
+    "time": "11:00",
+    "duration": "1h",
+    "priority": "medium"
+  },
+  {
+    "id": 21,
+    "title": "HR Check-in",
+    "date": "2025-07-11",
+    "time": "16:00",
+    "duration": "30m",
+    "priority": "low"
+  },
+  {
+    "id": 22,
+    "title": "Bug Triage",
+    "date": "2025-07-12",
+    "time": "12:00",
+    "duration": "1h",
+    "priority": "medium"
+  },
+  {
+    "id": 23,
+    "title": "Self Learning",
+    "date": "2025-07-13",
+    "time": "08:00",
+    "duration": "2h",
+    "priority": "low"
+  },
+  {
+    "id": 24,
+    "title": "1:1 with Manager",
+    "date": "2025-07-14",
+    "time": "10:00",
+    "duration": "1h",
+    "priority": "high"
+  },
+  {
+    "id": 25,
+    "title": "Design Brainstorm",
+    "date": "2025-07-15",
+    "time": "15:30",
+    "duration": "1.5h",
+    "priority": "medium"
+  },
+  {
+    "id": 26,
+    "title": "Finance Review",
+    "date": "2025-07-16",
+    "time": "17:00",
+    "duration": "1h",
+    "priority": "medium"
+  },
+  {
+    "id": 27,
+    "title": "Feature Launch",
+    "date": "2025-07-17",
+    "time": "09:00",
+    "duration": "All Day",
+    "priority": "high"
+  },
+  {
+    "id": 28,
+    "title": "Team Outing",
+    "date": "2025-07-18",
+    "time": "18:00",
+    "duration": "4h",
+    "priority": "low"
+  },
+  {
+    "id": 29,
+    "title": "Hackathon",
+    "date": "2025-07-19",
+    "time": "10:00",
+    "duration": "6h",
+    "priority": "high"
+  },
+  {
+    "id": 30,
+    "title": "Feedback Session",
+    "date": "2025-07-20",
+    "time": "13:00",
+    "duration": "1h",
+    "priority": "medium"
+  },
+  {
+    "id": 31,
+    "title": "Task Reprioritization",
+    "date": "2025-07-21",
+    "time": "10:00",
+    "duration": "1h",
+    "priority": "medium"
+  },
+  {
+    "id": 32,
+    "title": "New Feature Planning",
+    "date": "2025-07-22",
+    "time": "14:00",
+    "duration": "2h",
+    "priority": "high"
+  },
+  {
+    "id": 33,
+    "title": "Social Media Sync",
+    "date": "2025-07-23",
+    "time": "11:00",
+    "duration": "1h",
+    "priority": "low"
+  },
+  {
+    "id": 34,
+    "title": "Database Optimization",
+    "date": "2025-07-24",
+    "time": "15:00",
+    "duration": "1h",
+    "priority": "medium"
+  },
+  {
+    "id": 35,
+    "title": "Recruitment Round",
+    "date": "2025-07-25",
+    "time": "09:30",
+    "duration": "2h",
+    "priority": "high"
+  },
+  {
+    "id": 36,
+    "title": "Code Freeze",
+    "date": "2025-07-26",
+    "time": "20:00",
+    "duration": "All Day",
+    "priority": "high"
+  },
+  {
+    "id": 37,
+    "title": "Weekend Reading",
+    "date": "2025-07-27",
+    "time": "08:00",
+    "duration": "2h",
+    "priority": "low"
+  },
+  {
+    "id": 38,
+    "title": "Retro Meeting",
+    "date": "2025-07-28",
+    "time": "10:00",
+    "duration": "1h",
+    "priority": "medium"
+  },
+  {
+    "id": 39,
+    "title": "Internal Demo",
+    "date": "2025-07-29",
+    "time": "14:00",
+    "duration": "1h",
+    "priority": "medium"
+  },
+  {
+    "id": 40,
+    "title": "Docs Update",
+    "date": "2025-07-30",
+    "time": "11:00",
+    "duration": "1h",
+    "priority": "low"
+  },
+  {
+    "id": 41,
+    "title": "Monthly Wrap-up",
+    "date": "2025-07-31",
+    "time": "16:00",
+    "duration": "1h",
+    "priority": "medium"
+  }
+]
