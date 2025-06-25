@@ -7,14 +7,12 @@ import WeeklyCalendar from "../weeklyCalendar/WeeklyCalendar.jsx";
 import events from "../../data/events.json";
 import {
   startOfMonth,
-  endOfMonth,
-  startOfWeek,
-  endOfWeek,
   addDays,
   subMonths,
   addMonths,
   isToday,
   format,
+  startOfWeek,
 } from "date-fns";
 
 const CalendarGrid = () => {
@@ -23,8 +21,19 @@ const CalendarGrid = () => {
   const [viewMode, setViewMode] = useState("month");
   const [showYearPicker, setShowYearPicker] = useState(false);
 
-  const handlePrev = () => setCurrentDate((prev) => subMonths(prev, 1));
-  const handleNext = () => setCurrentDate((prev) => addMonths(prev, 1));
+  const handlePrev = () => {
+  const newDate = subMonths(currentDate, 1);
+  setCurrentDate(newDate);
+  const firstOfMonth = new Date(newDate.getFullYear(), newDate.getMonth(), 1);
+  setSelectedDate(format(firstOfMonth, "yyyy-MM-dd")); // show week from date 1
+};
+
+const handleNext = () => {
+  const newDate = addMonths(currentDate, 1);
+  setCurrentDate(newDate);
+  const firstOfMonth = new Date(newDate.getFullYear(), newDate.getMonth(), 1);
+  setSelectedDate(format(firstOfMonth, "yyyy-MM-dd")); // show week from date 1
+};
 
   useEffect(() => {
     const handleKeyDown = (e) => {
@@ -42,13 +51,11 @@ const CalendarGrid = () => {
   };
 
   const calendarDays = () => {
-    const start = startOfWeek(startOfMonth(currentDate));
+    const start = startOfWeek(startOfMonth(currentDate), { weekStartsOn: 0 });
     const days = [];
-
     for (let i = 0; i < 42; i++) {
       days.push(addDays(start, i));
     }
-
     return days;
   };
 
@@ -67,7 +74,6 @@ const CalendarGrid = () => {
           >
             {format(currentDate, "MMMM yyyy")}
           </h2>
-
           <button onClick={handleNext} className="next-btn">
             <img src={nextArrow} alt="Next" />
           </button>
@@ -87,6 +93,7 @@ const CalendarGrid = () => {
           </button>
         </div>
       </div>
+
       {showYearPicker && (
         <div className="year-picker">
           {generateYears().map((year) => (
@@ -96,7 +103,13 @@ const CalendarGrid = () => {
                 year === currentDate.getFullYear() ? "active-year" : ""
               }`}
               onClick={() => {
-                setCurrentDate(new Date(year, currentDate.getMonth()));
+                const newDate = new Date(
+                  year,
+                  currentDate.getMonth(),
+                  currentDate.getDate()
+                );
+                setCurrentDate(newDate);
+                setSelectedDate(format(newDate, "yyyy-MM-dd")); // ✅ Fix here
                 setShowYearPicker(false);
               }}
             >
@@ -148,7 +161,9 @@ const CalendarGrid = () => {
                       .map((event) => (
                         <div
                           key={event.id}
-                          className={`event-tag ${event.priority || "default"}`}
+                          className={`event-tag ${
+                            event.priority || "default"
+                          }`}
                           title={`${event.time} - ${event.duration}`}
                         >
                           {event.title}

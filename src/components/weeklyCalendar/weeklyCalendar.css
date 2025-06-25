@@ -99,7 +99,7 @@
 
 @media (max-width: 768px) {
   .weekly-calendar{
-    width: 90%;
+    width: 100%;
   }
   .week-grid {
     display: flex;

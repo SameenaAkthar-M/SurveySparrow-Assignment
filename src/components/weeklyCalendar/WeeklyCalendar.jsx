@@ -1,13 +1,15 @@
 import React, { useContext } from "react";
 import { SelectedDateContext } from "../../context/SelectedDateContext.jsx";
-import { startOfWeek, addDays, format, isToday, parseISO } from "date-fns";
+import { addDays, format, isToday, parseISO } from "date-fns";
 import events from "../../data/events.json";
 import "./weeklyCalendar.css";
 
 const WeeklyCalendar = () => {
   const { selectedDate, setSelectedDate } = useContext(SelectedDateContext);
   const selected = new Date(selectedDate);
-  const start = startOfWeek(selected, { weekStartsOn: 0 });
+
+  // 🔁 Start exactly from selectedDate (NOT from Sunday)
+  const start = selected;
   const days = Array.from({ length: 7 }, (_, i) => addDays(start, i));
 
   return (
